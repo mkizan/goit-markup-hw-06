@@ -11,7 +11,7 @@
 }
 
 body {
-    background-color: var(--background-portfolio-color);
+    background-color: var(--background-main-color);
     margin: 0;
     padding: 0;
     font-family: Roboto, sans-serif;
@@ -636,6 +636,8 @@ img {
 }
 
 .mailing-button {
+    display: flex;
+    align-items: center;
     padding: 10px 29px;
     text-transform: capitalize;
     border-radius: 4px;
@@ -645,6 +647,11 @@ img {
     letter-spacing: 0.06em;
     background-color: var(--accent-text-color);
     color: var(--hero-text-color);
+}
+
+.mailing-button .icon {
+    margin-left: 10px;
+    fill: currentColor;
 }
 
 /* PORTFOLIO PAGE */
@@ -840,17 +847,8 @@ img {
     margin-bottom: 28px; */
 }
 
-
-
-.form-input {
-    width: 100%;
-    padding: 14px 15px;
-    border: 1px solid var(--color-icon);
-    border-radius: 4px;
-}
-
 .form-label {
-    margin-bottom: 4px;
+    position: relative;
     font-weight: 400;
     font-size: 12px;
     line-height: 1.16;
@@ -858,14 +856,28 @@ img {
     color: var(--secondary-text-color);
 }
 
+.form-label .icon {
+    position: absolute;
+    top: 49%;
+    left: 15px;
+}
+
+.form-label:focus, .form-label:hover {
+    fill: var(--accent-text-color);
+}
+
+.form-input {
+    margin-top: 4px;
+    width: 100%;
+    padding: 14px 42px;
+    border: 1px solid var(--color-icon);
+    border-radius: 4px;
+}
+
 .form-input:focus, .form-input:hover {
     border: 1px solid var(--accent-text-color);
     cursor: pointer;
 }
-/* .modal-item input:focus, .modal-item input:hover {
-    border: 1px solid var(--accent-text-color);
-    cursor: pointer;
-} */
 
 .form-item textarea {
     width: 100%;
@@ -883,6 +895,11 @@ img {
     letter-spacing: 0.01em;
     color: var(--color-icon);
 }
+
+.form-item textarea:focus, .form-item textarea:hover {
+    border: 1px solid var(--accent-text-color);
+    cursor: pointer;
+} 
 
 .form-item.deal {
     display: flex;

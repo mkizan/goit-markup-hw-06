@@ -381,7 +381,11 @@
                         <span class="mailing-label">подпишитесь на рассылку</span>
                         <div class="form-mailing-wrapper">
                             <input type="email" placeholder="E-mail">
-                            <button type="submit" class="mailing-button">подписаться</button>
+                            <button type="submit" class="mailing-button">подписаться
+                                <svg class="icon" width="24" height="24">
+                                    <use href="./images/forms/symbol-defs.svg#icon-icon-send"></use>
+                                </svg>
+                            </button>
                         </div>
                     </form>
                 </div>
@@ -396,20 +400,35 @@
                 
                 <ul class="form-list">
                     <li class="form-item">
-                        <label for="name" class="form-label">Имя</label>        
-                        <input type="text" name="name" id="name" class="form-input" placeholder=" ">
+                        <label for="name" class="form-label">Имя
+                            <svg class="icon" width="18" height="18">
+                                <use href="./images/forms/symbol-defs.svg#icon-name"></use>
+                            </svg>
+                            <input type="text" name="name" id="name" class="form-input" placeholder=" ">
+                        </label>        
+                        
                     </li>
                     <li class="form-item">
-                        <label for="tel" class="form-label">Телефон</label>
-                        <input type="tel" id="tel" class="form-input" placeholder=" ">
+                        <label for="tel" class="form-label">Телефон
+                            <svg class="icon" width="18" height="18">
+                                <use href="./images/forms/symbol-defs.svg#icon-tel"></use>
+                            </svg>
+                            <input type="tel" id="tel" class="form-input" placeholder=" ">
+                        </label>
+                        
                     </li>
                     <li class="form-item">
-                        <label for="mail" class="form-label">Почта</label>
-                        <input type="email" id="mail" class="form-input" placeholder=" ">
+                        <label for="mail" class="form-label">Почта
+                            <svg class="icon" width="18" height="18">
+                                <use href="./images/forms/symbol-defs.svg#icon-email"></use>
+                            </svg>
+                            <input type="email" id="mail" class="form-input" placeholder=" ">
+                        </label>
+                        
                     </li>
                     <li class="form-item">
                         <label for="comments" class="form-label comments">Комментарий</label>
-                        <textarea id="comments" rows="6" placeholder=" "></textarea>
+                        <textarea id="comments" rows="6" placeholder="Введите текст"></textarea>
                     </li>
                     <li class="form-item deal">
                         <input type="checkbox">
