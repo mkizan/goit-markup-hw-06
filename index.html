@@ -375,11 +375,12 @@
                         </li>
                     </ul>
                 </div>
-                <div class="mailing-block">
-                    <form action="#" class="mailing">
-                        <label for="mailing">подпишитесь на рассылку</label>
-                        <div class="mailing-form-wrapper">
-                            <input type="email" id="mailing" placeholder="Email">
+                <div class="mailing-block">.
+                    <!-- <p class="mailing-action">подпишитесь на рассылку</p> -->
+                    <form action="#" class="mailing" autocomplete="off">
+                        <span class="mailing-label">подпишитесь на рассылку</span>
+                        <div class="form-mailing-wrapper">
+                            <input type="email" placeholder="E-mail">
                             <button type="submit" class="mailing-button">подписаться</button>
                         </div>
                     </form>
@@ -411,9 +412,9 @@
                         <textarea id="comments" rows="6" placeholder=" "></textarea>
                     </li>
                     <li class="form-item deal">
-                        <input type="checkbox" id="agree">
-                        <label for="agree" class="form-agree">Соглашаюсь с рассылкой и принимаю <a href="#" class="agree-link">Условия договора</a>
-                        </label>
+                        <input type="checkbox">
+                        <span class="form-agree">Соглашаюсь с рассылкой и принимаю <a href="#" class="agree-link">Условия договора</a>
+                        </span>
                     </li>
                 </ul>
                 <button type="submit" class="form-button">отправить</button>
