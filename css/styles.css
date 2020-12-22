@@ -474,6 +474,7 @@ img {
 
 .footer-wrapper {
     display: flex;
+    align-items: baseline;
 }
 
 .footer-wrapper a {
@@ -550,12 +551,12 @@ img {
 .social-block {
     display: flex;
     flex-direction: column;
+    margin-right: 93px;
     width: 206px;
     height: 80px;
 }
 
 .join {
-    margin-top: 12px;
     margin-bottom: 20px;
     font-style: normal;
     font-weight: 700;
@@ -589,6 +590,39 @@ img {
 
 .social-link:hover, .social-link:focus {
     background-color: var(--accent-text-color);
+}
+
+.mailing {
+    display: flex;
+    flex-direction: column;
+}
+
+.mailing-form-wrapper {
+    display: flex;
+    flex-direction: row;
+}
+
+.mailing label {
+    margin-bottom: 20px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--background-main-color);
+}
+
+.mailing input {
+    width: 358px;
+    margin-right: 12px;
+    padding: 15px 16px;
+    background-color: transparent;
+    border: 1px solid var(--secondary-text-color);
+    border-radius: 4px;
+}
+
+.mailing input::placeholder {
+    color: var(--secondary-text-color);
 }
 
 /* PORTFOLIO PAGE */
@@ -776,12 +810,24 @@ img {
 
 /* block FORM */
 
-.modal-item {
+.form-item {
     display: flex;
     flex-direction: column;
+    /* position: relative;
+    margin-bottom: 28px; */
 }
 
-.modal-item label {
+
+
+.form-input {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 14px 15px;
+    border: 1px solid var(--color-icon);
+    border-radius: 4px;
+}
+
+.form-label {
     margin-bottom: 4px;
     font-weight: 400;
     font-size: 12px;
@@ -790,19 +836,17 @@ img {
     color: var(--secondary-text-color);
 }
 
-.modal-item input {
-    margin-bottom: 10px;
-    padding: 14px 15px;
-    border: 1px solid var(--color-icon);
-    border-radius: 4px;
-}
-
-.modal-item input:focus, .modal-item input:hover {
+.form-input:hover {
     border: 1px solid var(--accent-text-color);
     cursor: pointer;
 }
+/* .modal-item input:focus, .modal-item input:hover {
+    border: 1px solid var(--accent-text-color);
+    cursor: pointer;
+} */
 
-.modal-item textarea {
+.form-item textarea {
+    width: 100%;
     margin-bottom: 20px;
     padding: 12px 16px;
     border: 1px solid var(--color-icon);
@@ -810,22 +854,22 @@ img {
     resize: none;
 }
 
-.modal-item textarea::placeholder {
+.form-item textarea::placeholder {
     font-weight: normal;
-    font-size: 14px;
+    font-size: 12px;
     line-height: 1.14;
     letter-spacing: 0.01em;
     color: var(--color-icon);
 }
 
-.modal-item.deal {
+.form-item.deal {
     display: flex;
     flex-direction: row;
     justify-content: center;
     margin-bottom: 40px;
 }
 
-.modal-item input[type="checkbox"] {
+.form-item input[type="checkbox"] {
     margin-right: 7px;
 }
 
@@ -833,7 +877,7 @@ img {
     color: var(--accent-text-color);
 }
 
-.modal-button {
+.form-button {
     display: block;
     margin: auto;
     padding: 10px 55px;
@@ -847,7 +891,7 @@ img {
     color: var(--background-main-color);
 }
 
-.modal-button::first-letter {
+.form-button::first-letter {
     text-transform: capitalize;
 }
 
