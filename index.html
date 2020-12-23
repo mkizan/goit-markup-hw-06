@@ -431,14 +431,21 @@
                         <textarea id="comments" rows="6" placeholder="Введите текст"></textarea>
                     </li>
                     <li class="form-item deal">
-                        <input type="checkbox">
-                        <span class="form-agree">Соглашаюсь с рассылкой и принимаю <a href="#" class="agree-link">Условия договора</a>
-                        </span>
+                        <label class="form-agree">
+                            <input type="checkbox" name="checkbox"/>
+                            <span class="icon"></span>
+                            Соглашаюсь с рассылкой и принимаю 
+                            <a href="#" class="agree-link">Условия договора</a>
+                        </label>
                     </li>
                 </ul>
                 <button type="submit" class="form-button">отправить</button>
             </form>
-            <button class="modal-close" data-close-modal>&times;</button>
+            <button class="modal-close" data-close-modal>
+                <svg class="icon" width="30" height="30">
+                    <use href="./images/forms/symbol-defs.svg#icon-close-modal"></use>
+                </svg>
+            </button>
         </div>
     </div>
     <script src="./js/modal.js"></script>
